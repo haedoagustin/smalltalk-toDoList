@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "<historical>",
+	"super" : "Object",
+	"category" : "ToDoList-App-Models",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state",
+		"name",
+		"comments",
+		"startTime",
+		"endTime"
+	],
+	"name" : "ToDoItem",
+	"type" : "normal"
+}
