@@ -1,3 +1,3 @@
-accessing editing state
+accessing
 startItem
 	startedAt := DateAndTime now

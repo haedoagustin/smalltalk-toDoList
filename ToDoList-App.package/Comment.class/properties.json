@@ -1,13 +1,14 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "TestCase",
-	"category" : "ToDoList-App-Tests",
+	"super" : "Object",
+	"category" : "ToDoList-App-Models",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"list"
+		"title",
+		"body"
 	],
-	"name" : "ToDoListTest",
+	"name" : "Comment",
 	"type" : "normal"
 }

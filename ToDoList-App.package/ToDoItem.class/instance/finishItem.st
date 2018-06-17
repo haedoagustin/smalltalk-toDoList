@@ -1,3 +1,3 @@
-accessing editing state
+accessing
 finishItem
 	finishedAt := DateAndTime now

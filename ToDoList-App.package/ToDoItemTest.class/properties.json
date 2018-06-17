@@ -5,7 +5,13 @@
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [ ],
+	"instvars" : [
+		"pending",
+		"inProgress",
+		"paused",
+		"finished",
+		"aComment"
+	],
 	"name" : "ToDoItemTest",
 	"type" : "normal"
 }

@@ -1,3 +1,3 @@
-accessing editing state
+accessing
 startedAt
 	^ startedAt
