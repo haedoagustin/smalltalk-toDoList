@@ -1,5 +1,5 @@
 instance creation
 name: aName
 	^ self new
-		initialize: aName;
+		name: aName;
 		yourself

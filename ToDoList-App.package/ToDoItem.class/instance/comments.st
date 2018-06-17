@@ -1,4 +1,4 @@
-accessing
+comment
 comments
 
 	^ comments

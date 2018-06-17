@@ -1,0 +1,3 @@
+testing
+isFinished
+	^ state isFinished

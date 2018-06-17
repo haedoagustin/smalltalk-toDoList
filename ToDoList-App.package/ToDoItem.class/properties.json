@@ -6,11 +6,11 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"state",
 		"name",
+		"state",
 		"comments",
-		"startTime",
-		"endTime"
+		"finishedAt",
+		"startedAt"
 	],
 	"name" : "ToDoItem",
 	"type" : "normal"

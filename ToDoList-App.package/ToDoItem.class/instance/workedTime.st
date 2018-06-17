@@ -1,3 +1,3 @@
-accessing
+accessing editing state
 workedTime
-	^ state workedTime: self
+	^ state workedTime

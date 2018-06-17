@@ -1,3 +1,3 @@
-accessing
+accessing editing state
 togglePause
-	state togglePause: self
+	^ state togglePause

@@ -1,3 +1,3 @@
-accessing
+accessing editing state
 finish
-	state finish: self
+	^ state finish

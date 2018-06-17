@@ -1,3 +1,3 @@
-accessing
+comment
 addComment: aComment
-	state addComment: aComment to: self
+	state addComment: aComment

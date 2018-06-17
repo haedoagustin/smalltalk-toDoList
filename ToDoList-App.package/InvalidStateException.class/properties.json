@@ -1,13 +1,11 @@
 {
 	"commentStamp" : "<historical>",
-	"super" : "Object",
-	"category" : "ToDoList-App-Models",
+	"super" : "Error",
+	"category" : "ToDoList-App-Exceptions",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
-	"instvars" : [
-		"context"
-	],
-	"name" : "ToDoState",
+	"instvars" : [ ],
+	"name" : "InvalidStateException",
 	"type" : "normal"
 }
