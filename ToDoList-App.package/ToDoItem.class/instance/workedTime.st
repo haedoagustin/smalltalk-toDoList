@@ -1,3 +1,3 @@
 accessing editing state
 workedTime
-	^ state workedTime
+	^ state workedTime humanReadablePrintString

@@ -1,3 +1,0 @@
-filering
-all
-	^ items
