@@ -2,7 +2,9 @@
 	"commentStamp" : "<historical>",
 	"super" : "WAComponent",
 	"category" : "ToDoList-App-WebApplication",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"instance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
