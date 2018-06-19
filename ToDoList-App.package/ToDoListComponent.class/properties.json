@@ -2,12 +2,14 @@
 	"commentStamp" : "<historical>",
 	"super" : "WAComponent",
 	"category" : "ToDoList-App-WebApplication",
-	"classinstvars" : [ ],
+	"classinstvars" : [
+		"instance"
+	],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"toDoList",
-		"filerBlock"
+		"filterBlock"
 	],
 	"name" : "ToDoListComponent",
 	"type" : "normal"

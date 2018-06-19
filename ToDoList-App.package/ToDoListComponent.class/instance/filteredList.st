@@ -1,3 +1,3 @@
 filtering
 filteredList
-	^ self filterBlock value: self toDoList
+	^  self filterBlock value: self toDoList 
