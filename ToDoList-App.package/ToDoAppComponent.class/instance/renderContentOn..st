@@ -1,5 +1,7 @@
 rendering
 renderContentOn: html
-	self renderHeaderOn: html.
+	html heading: 'ToDoList App'.
 	self renderNavOn: html.
-	self renderMainOn: html
+	html div
+		class: 'main';
+		with: self mainComponent

@@ -1,3 +1,3 @@
 accessing
 status
-	^ 'Terminada en ' , context workedTime
+	^ 'Terminada en ' , context workedTime humanReadablePrintString

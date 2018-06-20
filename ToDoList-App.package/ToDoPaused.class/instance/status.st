@@ -1,3 +1,3 @@
 accessing
 status
-	^ 'Pausada - Comenzada hace ' , context workedTime
+	^ 'Pausada - Comenzada hace ' , context workedTime humanReadablePrintString
