@@ -1,3 +1,3 @@
 accessing
 status
-	^ 'En progreso - Comenzada hace ' , context workedTime
+	^ 'En progreso - Comenzada hace ' , context workedTime humanReadablePrintString

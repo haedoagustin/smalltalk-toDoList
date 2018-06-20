@@ -19,4 +19,8 @@ renderNavOn: html
 	html text: ' - '.
 	html anchor
 		callback: [ self mainComponent filterBlock: [ :list | list finished ] ];
-		with: 'Finalizado'
+		with: 'Finalizado'.
+	html text: ' - '.
+	html anchor
+		callback: [ self createNewTask ];
+		with: 'Nueva tarea'
