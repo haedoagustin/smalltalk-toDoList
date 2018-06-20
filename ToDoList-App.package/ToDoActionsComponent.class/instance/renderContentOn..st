@@ -1,7 +1,7 @@
 rendering
 renderContentOn: html
 	html anchor
-		callback: [ self toDoItemDetails ];
+		callback: [ self seeDetails ];
 		with: 'Ver detalles'.
 	html space.
 	html anchor

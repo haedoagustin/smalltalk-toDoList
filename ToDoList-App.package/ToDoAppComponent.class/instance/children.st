@@ -1,4 +1,3 @@
 hooks
 children
- 
- ^ Array with: self mainComponent
+	^ Array with: self toDoListComponent

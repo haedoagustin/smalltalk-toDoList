@@ -2,25 +2,25 @@ rendering
 renderNavOn: html
 	html text: 'Ver: '.
 	html anchor
-		callback: [ self mainComponent filterBlock: [ :list | list items ] ];
+		callback: [ self toDoListComponent filterBlock: [ :list | list items ] ];
 		with: 'Todos '.
 	html text: ' - '.
 	html anchor
-		callback: [ self mainComponent filterBlock: [ :list | list pending ] ];
+		callback: [ self toDoListComponent filterBlock: [ :list | list pending ] ];
 		with: 'Pendientes'.
 	html text: ' - '.
 	html anchor
-		callback: [ self mainComponent filterBlock: [ :list | list paused ] ];
+		callback: [ self toDoListComponent filterBlock: [ :list | list paused ] ];
 		with: 'Pausado'.
 	html text: ' - '.
 	html anchor
-		callback: [ self mainComponent filterBlock: [ :list | list inProgress ] ];
+		callback: [ self toDoListComponent filterBlock: [ :list | list inProgress ] ];
 		with: 'En progreso'.
 	html text: ' - '.
 	html anchor
-		callback: [ self mainComponent filterBlock: [ :list | list finished ] ];
+		callback: [ self toDoListComponent filterBlock: [ :list | list finished ] ];
 		with: 'Finalizado'.
 	html text: ' - '.
 	html anchor
-		callback: [ self createNewTask ];
-		with: 'Nueva tarea'
+		callback: [ self createNewToDoItem ];
+		with: 'Nueva tarea'.

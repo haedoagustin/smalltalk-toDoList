@@ -1,4 +1,4 @@
 accessing
 initialize
 	super initialize.
-	toDoItemComponent := ToDoItemComponent new
+	toDoItemComponent := ToDoItemComponent new.

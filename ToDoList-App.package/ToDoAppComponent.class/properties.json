@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"mainComponent"
+		"toDoListComponent",
+		"toDoItemCreator",
+		"toDoItemComponent"
 	],
 	"name" : "ToDoAppComponent",
 	"type" : "normal"

@@ -1,3 +1,0 @@
-accessing
-mainComponent
-	^ mainComponent
