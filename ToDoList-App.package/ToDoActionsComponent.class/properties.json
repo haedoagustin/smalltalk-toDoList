@@ -6,8 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"toDoItem",
-		"toDoItemComponent"
+		"toDoItem"
 	],
 	"name" : "ToDoActionsComponent",
 	"type" : "normal"

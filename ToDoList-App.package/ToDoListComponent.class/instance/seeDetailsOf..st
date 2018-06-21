@@ -1,5 +1,5 @@
 as yet unclassified
-seeDetailsOf: anItem
-toDoItemComponent toDoItem: anItem.
+seeDetailsOf: aToDoItem
+	self toDoItemComponent toDoItem: aToDoItem.
 	(self call: self toDoItemComponent)
 		ifTrue: [ Transcript show: 'ok' ]

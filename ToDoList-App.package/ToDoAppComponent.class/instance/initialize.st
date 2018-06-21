@@ -1,6 +1,5 @@
 initialization
 initialize
 	super initialize.
-	self toDoListComponent: ToDoListComponent getOrCreateInstance.
-	toDoItemCreator := ToDoItemCreator new.
-	toDoItemComponent:= ToDoItemComponent new.
+	self toDoListComponent: ToDoListComponent getOrCreateInstance .
+	toDoItemCreator := ToDoItemCreator new
