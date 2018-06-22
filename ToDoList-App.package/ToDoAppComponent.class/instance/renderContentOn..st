@@ -4,4 +4,4 @@ renderContentOn: html
 	self renderNavOn: html.
 	html div
 		class: 'main';
-		with: self toDoListComponent.
+		with: self toDoListComponent
