@@ -1,8 +1,9 @@
 rendering
 renderNavOn: html
+	| nav |
 	html anchor
 		callback: [ self createItem ];
-		with: 'crear nuevo item '.
+		with: 'Nuevo '.
 	html tbsNav
 		beTabs;
 		with: [ html tbsNavItem
@@ -10,8 +11,8 @@ renderNavOn: html
 				with: [ html anchor
 						callback: [ self filterBlock: [ :list | list items ] ];
 						with: 'Todos' ].
-			html
-				tbsNavItem: [ html anchor
+		html tbsNavItem
+				with: [ html anchor
 						callback: [ self filterBlock: [ :list | list pending ] ];
 						with: 'Pendientes' ].
 			html
@@ -22,7 +23,7 @@ renderNavOn: html
 				tbsNavItem: [ html anchor
 						callback: [ self filterBlock: [ :list | list inProgress ] ];
 						with: 'En progreso' ].
-			html tbsNavItem: [
-			html anchor
-				callback: [ self filterBlock: [ :list | list finished ] ];
-				with: 'Finalizado' ]].
+			html
+				tbsNavItem: [ html anchor
+						callback: [ self filterBlock: [ :list | list finished ] ];
+						with: 'Finalizado' ] ]
