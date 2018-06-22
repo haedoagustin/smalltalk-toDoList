@@ -1,3 +1,3 @@
 hooks
 children
-	^ Array with: self toDoListComponent
+	^ Array with: self toDoListComponent with: self toDoItemCreator

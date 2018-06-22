@@ -1,0 +1,3 @@
+adding
+canReciveComments
+	^ false
