@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"toDoItem"
+		"toDoItem",
+		"callbackSeeDetails",
+		"callbackToDelete"
 	],
 	"name" : "ToDoItemComponent",
 	"type" : "normal"

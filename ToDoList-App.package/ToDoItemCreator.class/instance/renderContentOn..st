@@ -17,7 +17,7 @@ renderContentOn: html
 				callback: [ :value | toDoItem addComment: value ].
 			html break.
 			html submitButton
-				callback: [ self answer: true ];
+				callback: [ self answer: toDoItem ];
 				value: 'Guardar'.
 			html submitButton
 				callback: [ self answer: false ];

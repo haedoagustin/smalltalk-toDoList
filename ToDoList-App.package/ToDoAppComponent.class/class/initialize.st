@@ -1,3 +1,7 @@
 initialization
 initialize
-	WAAdmin register: self asApplicationAt: self handlerName
+	| app |
+	app := WAAdmin
+		register: self asApplicationAt: self handlerName .
+		app addLibrary: JQDeploymentLibrary;
+		addLibrary: TBSDeploymentLibrary

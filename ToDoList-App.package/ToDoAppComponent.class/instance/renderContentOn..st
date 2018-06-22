@@ -1,7 +1,5 @@
 rendering
 renderContentOn: html
-	html heading: 'ToDoList App'.
-	self renderNavOn: html.
-	html div
-		class: 'main';
-		with: self toDoListComponent
+	html
+		tbsContainer: [ html heading:  'ToDo App'.
+			html div with: ToDoListComponent getOrCreateInstance ]
