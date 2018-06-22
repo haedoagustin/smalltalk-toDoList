@@ -6,21 +6,21 @@ renderNavOn: html
 	html
 		tbsNav: [ html
 				tbsTabContent: [ html anchor
-						callback: [ self toDoListComponent filterBlock: [ :list | list items ] ];
+						callback: [ self  filterBlock: [ :list | list items ] ];
 						with: 'Todos ' ].
 			html
 				tbsNavItem: [ html anchor
-						callback: [ self toDoListComponent filterBlock: [ :list | list pending ] ];
+						callback: [ self  filterBlock: [ :list | list pending ] ];
 						with: 'Pendientes' ].
 			html text: ' - '.
 			html anchor
-				callback: [ self toDoListComponent filterBlock: [ :list | list paused ] ];
+				callback: [ self  filterBlock: [ :list | list paused ] ];
 				with: 'Pausado'.
 			html text: ' - '.
 			html anchor
-				callback: [ self toDoListComponent filterBlock: [ :list | list inProgress ] ];
+				callback: [ self  filterBlock: [ :list | list inProgress ] ];
 				with: 'En progreso'.
 			html text: ' - '.
 			html anchor
-				callback: [ self toDoListComponent filterBlock: [ :list | list finished ] ];
+				callback: [ self  filterBlock: [ :list | list finished ] ];
 				with: 'Finalizado' ]
