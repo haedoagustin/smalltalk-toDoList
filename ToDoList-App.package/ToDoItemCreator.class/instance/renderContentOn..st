@@ -20,5 +20,5 @@ renderContentOn: html
 				callback: [ self answer: toDoItem ];
 				value: 'Guardar'.
 			html submitButton
-				callback: [ self answer: false ];
+				callback: [ self answer: nil ];
 				value: 'Cancelar' ]
