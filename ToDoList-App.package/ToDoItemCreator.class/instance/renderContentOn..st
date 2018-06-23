@@ -6,15 +6,13 @@ renderContentOn: html
 	html
 		form: [ html text: 'Nombre: '.
 			html break.
-			html textInput
-				placeholder: 'asignar nombre';
+			html
+				textInput
 				callback: [ :value | toDoItem name: value ].
 			html break.
 			html text: 'Comentario inicial: '.
 			html break.
-			html textArea
-				placeholder: 'Escribir un comentario';
-				callback: [ :value | toDoItem addComment: value ].
+			html textArea callback: [ :value | toDoItem addComment: value ].
 			html break.
 			html submitButton
 				callback: [ self answer: toDoItem ];
