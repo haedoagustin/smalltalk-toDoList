@@ -1,0 +1,3 @@
+testing
+canReciveComments
+	^ state canReciveComments
