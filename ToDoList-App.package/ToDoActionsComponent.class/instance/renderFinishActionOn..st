@@ -6,4 +6,4 @@ renderFinishActionOn: html
 				beSmall;
 				beLabeled;
 				beSuccess;
-				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconCheck ] ] ]
+				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconOk ] ] ]
