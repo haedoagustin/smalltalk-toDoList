@@ -2,11 +2,11 @@ rendering
 renderTableOn: html
 	html
 		tableHead: [ html tableHeading: 'Tarea'.
-			html tableHeading: 'Estado'.].
+			html tableHeading: 'Estado' ].
 	html
 		tableBody: [ html tbsTable
 				beHover;
-				with: [ self filteredList
+				with: [ (self filteredList sort: self sortedBlock)
 						do: [ :each | 
 							| itemComponent |
 							itemComponent := ToDoItemComponent with: each.
