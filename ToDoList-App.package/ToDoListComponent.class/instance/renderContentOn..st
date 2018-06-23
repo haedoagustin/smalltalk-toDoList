@@ -2,6 +2,8 @@ rendering
 renderContentOn: html
 	html tbsPanel beDefault with: [ html tbsPanelBody: [ self renderNavOn: html ] ].
 	html tbsPanel beDefault
-		with: [ html
-				tbsTable: [ self renderTableOn: html.
-					] ]
+		with: [ html tbsTable: [ self renderTableOn: html ].
+			html tbsPanelFooter
+				with: [ html anchor
+						callback: [self mockupData];
+						with: 'Agregar datos a la tabla' ] ]

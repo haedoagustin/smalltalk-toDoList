@@ -1,3 +1,4 @@
 comment
 addComment: aComment
-	state addComment: aComment
+	aComment ifNotEmpty: [ 
+	state addComment: aComment]
