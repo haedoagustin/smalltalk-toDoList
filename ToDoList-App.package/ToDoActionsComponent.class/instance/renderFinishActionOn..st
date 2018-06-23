@@ -1,5 +1,9 @@
 rendering
 renderFinishActionOn: html
-		html anchor
+	html anchor
 		callback: [ self toDoItem finish ];
-		with: 'Finalizar'
+		with: [ html tbsButton
+				beSmall;
+				beLabeled;
+				beSuccess;
+				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconCheck ] ] ]

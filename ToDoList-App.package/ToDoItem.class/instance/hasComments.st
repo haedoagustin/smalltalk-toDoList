@@ -1,0 +1,4 @@
+testing
+hasComments
+
+	^ comments notEmpty 

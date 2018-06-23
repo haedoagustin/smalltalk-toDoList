@@ -1,5 +1,9 @@
 rendering
 renderStartActionOn: html
-		html anchor
+	html anchor
 		callback: [ self toDoItem start ];
-		with: 'Iniciar'
+		with: [ html tbsButton
+				beSmall;
+				beLabeled;
+				beDefault;
+				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconPlay ].]]

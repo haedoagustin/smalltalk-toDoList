@@ -1,4 +1,4 @@
-accessing
+rendering
 renderListOfCommentOn: html
 	html heading
 		level3;

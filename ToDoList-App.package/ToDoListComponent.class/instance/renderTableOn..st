@@ -1,12 +1,14 @@
 rendering
 renderTableOn: html
-	html tbsTable
-		beHover;
-		with: [ self filteredList
-				do: [ :each | 
-					
-						  | itemComponent |
-							itemComponent := ToDoItemComponent with: each.
-							itemComponent setCallbackSeeDetails: [ self callbackToSeeDetailsOf: each ].
-							itemComponent setCallbackToDelete: [ self callbackToDelete: each ].
-							itemComponent renderAsRowOn: html ] ] 
+	html
+		tableHead: [ html tableHeading: 'Tarea'.
+			html tableHeading: 'Estado' ].
+	html
+		tableBody: [ html tbsTable
+				beHover;
+				with: [ (self filteredList sort: self sortedBlock)
+						do: [ :each | 
+							(ToDoItemComponent
+								with: each
+								onDelete: [ self callbackToDelete: each ]
+								onShow: [ self callbackToSeeDetailsOf: each ] ) renderAsRowOn: html] ] ]

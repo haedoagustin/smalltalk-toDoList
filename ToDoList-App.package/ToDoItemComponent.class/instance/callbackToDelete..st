@@ -1,3 +1,3 @@
 accessing
-setCallbackToDelete: aCallback
+callbackToDelete: aCallback
 	callbackToDelete := aCallback

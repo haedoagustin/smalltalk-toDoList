@@ -1,3 +1,3 @@
 accessing
-setCallbackSeeDetails: aCallback
+callbackSeeDetails: aCallback
 	callbackSeeDetails:=aCallback.

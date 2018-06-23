@@ -10,7 +10,8 @@
 		"state",
 		"comments",
 		"finishedAt",
-		"startedAt"
+		"startedAt",
+		"createdAt"
 	],
 	"name" : "ToDoItem",
 	"type" : "normal"
