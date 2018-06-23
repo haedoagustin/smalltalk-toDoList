@@ -1,17 +1,17 @@
 rendering
 renderNavOn: html
-	| nav |
-	html anchor
-		callback: [ self createItem ];
-		with: 'Nuevo '.
+html tbsGlyphIcon iconPlus
+						with: [ html anchor
+								callback: [ self createItem ];
+								with: 'Nuevo' ] .
 	html tbsNav
-		beTabs;
+		bePills;
 		with: [ html tbsNavItem
 				beActive;
 				with: [ html anchor
 						callback: [ self filterBlock: [ :list | list items ] ];
 						with: 'Todos' ].
-		html tbsNavItem
+			html tbsNavItem
 				with: [ html anchor
 						callback: [ self filterBlock: [ :list | list pending ] ];
 						with: 'Pendientes' ].

@@ -9,4 +9,4 @@ renderAsRowOn: html
 		tableData: [ html div with: (ToDoActionsComponent of: self toDoItem) ];
 		tableData: [ html anchor
 				callback: callbackToDelete;
-				with: 'Eliminar' ].
+				with: 'Eliminar' ]
