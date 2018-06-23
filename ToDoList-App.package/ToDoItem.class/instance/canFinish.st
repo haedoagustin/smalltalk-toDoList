@@ -1,0 +1,3 @@
+testing
+canFinish
+	^ state canFinish 

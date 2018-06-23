@@ -1,0 +1,3 @@
+changing state
+canPause
+	^ true

@@ -1,12 +1,14 @@
 rendering
 renderContentOn: html
-	toDoItem isPending
-		ifTrue: [ self renderStartActionOn: html ]
-		ifFalse: [ toDoItem isInProgress
-				ifTrue: [ self renderPauseActionOn: html.
-					html space.
-					self renderFinishActionOn: html ]
-				ifFalse: [ toDoItem isPaused
-						ifTrue: [ self renderContinueActionOn: html.
-							html space.
-							self renderFinishActionOn: html ] ] ].
+	(toDoItem canStart)
+		ifTrue: [ self renderStartActionOn: html.
+			html space ].
+	toDoItem canPause
+		ifTrue: [ self renderPauseActionOn: html.
+			html space ].
+	toDoItem canRestart
+		ifTrue: [ self renderContinueActionOn: html.
+			html space ].
+	toDoItem canFinish
+		ifTrue: [ self renderFinishActionOn: html.
+			html space ]
