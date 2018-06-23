@@ -8,8 +8,7 @@ renderTableOn: html
 				beHover;
 				with: [ (self filteredList sort: self sortedBlock)
 						do: [ :each | 
-							| itemComponent |
-							itemComponent := ToDoItemComponent with: each.
-							itemComponent setCallbackSeeDetails: [ self callbackToSeeDetailsOf: each ].
-							itemComponent setCallbackToDelete: [ self callbackToDelete: each ].
-							itemComponent renderAsRowOn: html ] ] ]
+							(ToDoItemComponent
+								with: each
+								onDelete: [ self callbackToDelete: each ]
+								onShow: [ self callbackToSeeDetailsOf: each ] ) renderAsRowOn: html] ] ]
