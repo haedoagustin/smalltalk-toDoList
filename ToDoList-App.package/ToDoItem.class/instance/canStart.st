@@ -1,3 +1,3 @@
 testing
 canStart
-	^ true
+	^ state canStart 

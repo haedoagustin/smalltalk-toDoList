@@ -1,3 +1,3 @@
 testing
 canRestart
-	^ true
+	^ state canRestart 

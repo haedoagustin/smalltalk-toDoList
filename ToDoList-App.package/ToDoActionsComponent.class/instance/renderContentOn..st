@@ -1,6 +1,6 @@
 rendering
 renderContentOn: html
-	toDoItem canStart
+	(toDoItem canStart)
 		ifTrue: [ self renderStartActionOn: html.
 			html space ].
 	toDoItem canPause
@@ -10,4 +10,5 @@ renderContentOn: html
 		ifTrue: [ self renderContinueActionOn: html.
 			html space ].
 	toDoItem canFinish
-		ifTrue: [ self renderFinishActionOn: html. html space ]
+		ifTrue: [ self renderFinishActionOn: html.
+			html space ]

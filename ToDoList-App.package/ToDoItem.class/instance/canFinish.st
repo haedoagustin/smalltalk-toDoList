@@ -1,3 +1,3 @@
 testing
 canFinish
-	^ true
+	^ state canFinish 

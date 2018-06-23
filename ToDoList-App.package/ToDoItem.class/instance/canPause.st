@@ -1,3 +1,3 @@
 testing
 canPause
-	^ true
+	^ state canPause 
