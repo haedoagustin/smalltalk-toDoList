@@ -1,22 +1,17 @@
-accessing
+rendering
 renderAsDetailOn: html
-	html heading: self toDoItem name.
-	html tbsGlyphIcon iconTrash.
-	html anchor
-		callback: [ callbackToDelete value.
-			self answer: false ];
-		with: ' Eliminar tarea'.
-	html heading
-		level4;
-		with: 'Estado actual: ' , self toDoItem status.
-	html heading
-		level4;
-		with: (ToDoActionsComponent of: toDoItem).
-	self renderListOfCommentOn: html.
-	toDoItem canReciveComments
-		ifTrue: [ self renderAddCommentOn: html ].
-		html break .
-	html tbsGlyphIcon iconBackward.
-	html anchor
-		callback: [ self answer: false ];
-		with: ' Volver al menu principal'
+	html tbsPanel
+		beDefault;
+		with: [ html tbsPanelHeading: [ html heading: self toDoItem name ].
+			html
+				tbsPanelBody: [ self renderStatusOn: html.
+					self renderItemActionsOn: html.
+					self
+						renderDeleteActionOn: html
+						with: [ callbackToDelete value.
+							self answer: false ].
+					self toDoItem hasComments
+						ifTrue: [ self renderListOfCommentOn: html ].
+					toDoItem canReciveComments
+						ifTrue: [ self renderAddCommentOn: html ] ].
+			html tbsPanelFooter: [ self renderHomeActionOn: html ] ]

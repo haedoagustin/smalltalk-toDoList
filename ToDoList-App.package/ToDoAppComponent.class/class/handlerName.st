@@ -1,3 +1,3 @@
 private
 handlerName
-	^ 'todoApp'
+	^ 'toDoListApp'

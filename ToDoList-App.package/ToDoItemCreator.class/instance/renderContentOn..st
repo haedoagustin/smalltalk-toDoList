@@ -6,9 +6,7 @@ renderContentOn: html
 	html
 		form: [ html text: 'Nombre: '.
 			html break.
-			html
-				textInput
-				callback: [ :value | toDoItem name: value ].
+			html textInput autofocus; callback: [ :value | toDoItem name: value ].
 			html break.
 			html text: 'Comentario inicial: '.
 			html break.

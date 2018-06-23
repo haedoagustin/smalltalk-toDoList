@@ -1,5 +1,6 @@
 rendering
 renderContentOn: html
-	html
-		tbsContainer: [ html heading:  'ToDo App'.
-			html div with: ToDoListComponent getOrCreateInstance ]
+	html tbsNavbar beDefault
+		with: [ html tbsContainer: [ html tbsNavbarBrand with: 'ToDoList App' ] ].
+		html
+		tbsContainer: [ html div with: ToDoListComponent getOrCreateInstance ]
