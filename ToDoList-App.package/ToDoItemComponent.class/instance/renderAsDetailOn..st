@@ -4,8 +4,17 @@ renderAsDetailOn: html
 	html heading
 		level4;
 		with: 'Estado: ' , self toDoItem status.
+	html heading
+		level4;
+		with: (ToDoActionsComponent of: toDoItem).
+	html anchor
+		callback: [callbackToDelete value. 
+						self  answer: false.
+			];
+		with: 'Eliminar'.
 	html
-		form: [ html unorderedList: [ self toDoItem comments do: [ :comment | html listItem: comment ] ].
+		form: [ html
+				unorderedList: [ self toDoItem comments do: [ :comment | html listItem: comment ] ].
 			html textArea callback: [ :value | toDoItem addComment: value ].
 			html break.
 			html submitButton
