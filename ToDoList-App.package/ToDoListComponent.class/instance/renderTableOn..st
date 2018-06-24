@@ -6,7 +6,7 @@ renderTableOn: html
 	html
 		tableBody: [ html tbsTable
 				beHover;
-				with: [ (self toDoListFiltered sort: self sortedBlock) 
+				with: [ (self toDoListFiltered )
 						do: [ :each | 
 							(ToDoItemComponent
 								with: each

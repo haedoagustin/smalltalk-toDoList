@@ -1,3 +1,3 @@
 initialization
 initialize
-	items := OrderedCollection new. 
+	items := SortedCollection sortBlock: [ :a :b | b createdAt < a createdAt  ]

@@ -10,7 +10,6 @@
 	"instvars" : [
 		"toDoList",
 		"filterBlock",
-		"sortedBlock",
 		"toDoItemComponent",
 		"filterSelector",
 		"toDoListFiltered"
