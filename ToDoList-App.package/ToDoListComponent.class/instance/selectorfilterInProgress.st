@@ -1,0 +1,3 @@
+accessing selectors
+selectorfilterInProgress
+	^ #inProgress
