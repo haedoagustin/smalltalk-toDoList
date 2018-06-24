@@ -5,4 +5,4 @@ renderSeeDetailsActionOn: html
 		with: [ html tbsButton
 				beSmall;
 				beInfo;
-				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconLogin ]. ]]
+				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconEdit ] ] ]
