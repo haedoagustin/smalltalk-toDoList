@@ -1,3 +1,3 @@
 accessing
 sortedBlock
-	^ sortedBlock
+	^sortedBlock

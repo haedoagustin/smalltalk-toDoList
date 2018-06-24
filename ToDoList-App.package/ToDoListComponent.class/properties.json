@@ -11,7 +11,9 @@
 		"toDoList",
 		"filterBlock",
 		"sortedBlock",
-		"toDoItemComponent"
+		"toDoItemComponent",
+		"filterSelector",
+		"toDoListFiltered"
 	],
 	"name" : "ToDoListComponent",
 	"type" : "normal"
