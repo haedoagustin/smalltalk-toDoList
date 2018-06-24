@@ -1,7 +1,8 @@
 tests-filering
 testPending
-	self assert: list pending size equals: 1.
-	list addItem: (ToDoItem name: 'Tarea pendiente nueva').
-	self assert: list pending size equals: 2.
-	(list items at: 1) start.
-	self assert: list pending size equals: 1.
+	| newItem |
+	newItem := ToDoItem name: 'Tarea que estará pendiente'.
+	list addItem: newItem.
+	self assert: (list pending includes: newItem).
+	newItem start.
+	self deny: (list pending includes: newItem)

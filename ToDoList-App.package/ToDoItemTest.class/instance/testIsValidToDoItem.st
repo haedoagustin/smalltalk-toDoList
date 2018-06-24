@@ -1,3 +1,4 @@
 tests-comment
 testIsValidToDoItem
-	self should:  [ (ToDoItem name: 'a Valid Task') isValid ]
+	self assert: (ToDoItem name: 'a Valid Task') isValid.
+	self deny: [ (ToDoItem name: '') isValid ]

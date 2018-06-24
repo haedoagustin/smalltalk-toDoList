@@ -1,5 +1,7 @@
 tests-adding/removing
 testAddItem
-	self assert: list size equals: 4.
-	list addItem: (ToDoItem name: 'Tarea finalizada') start finish.
-	self assert: list size equals: 5.
+	| newItem |
+	newItem := ToDoItem name: 'Nueva tarea'.
+	self deny: (list includes: newItem).
+	list addItem: newItem.
+	self assert: (list includes: newItem)
