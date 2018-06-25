@@ -1,3 +1,7 @@
 delegation
 createItem
-	(self call: ToDoItemCreator new) ifNotNil: [ :item | item isValid ifTrue: [self addItem: item] ]
+	(self call: ToDoItemCreator new)
+		ifNotNil: [ :item | 
+			item isValid
+				ifTrue: [ self addItem: item ]
+				ifFalse: [ self createItem ] ]
