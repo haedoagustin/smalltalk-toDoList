@@ -1,7 +1,7 @@
 rendering
 renderHomeActionOn: html with: aCallback
 	self
-		renderActionWith: aCallback
+		renderActionOn: html
 		button: [ html tbsButton
 				beSmall;
 				beDefault;
@@ -9,4 +9,4 @@ renderHomeActionOn: html with: aCallback
 						tbsButtonLabel: [ html tbsGlyphIcon iconHome ];
 						space;
 						text: 'Volver al inicio' ] ]
-		on: html
+		with: aCallback

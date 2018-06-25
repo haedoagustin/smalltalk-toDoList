@@ -9,7 +9,6 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"toDoList",
-		"toDoItemComponent",
 		"filterSelector"
 	],
 	"name" : "ToDoListComponent",

@@ -1,5 +1,5 @@
 rendering
-renderContentOn: html
+renderActionsOn: html
 	self renderStartActionOn: html.
 	self renderPauseActionOn: html.
 	self renderContinueActionOn: html.

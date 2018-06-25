@@ -1,10 +1,10 @@
 rendering
 renderDeleteActionOn: html with: aCallback
 	self
-		renderActionWith: aCallback
+		renderActionOn: html
 		button: [ html tbsButton
 				beSmall;
 				beLabeled;
 				beDanger;
 				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconTrash ] ] ]
-		on: html
+		with: aCallback

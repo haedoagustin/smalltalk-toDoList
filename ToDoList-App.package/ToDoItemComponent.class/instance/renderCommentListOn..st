@@ -1,4 +1,4 @@
-rendering
+private - rendering
 renderCommentListOn: html
 	self toDoItem hasComments
 		ifFalse: [ html html: '<h4><i>No hay comentarios. :(</i></h4>' ]

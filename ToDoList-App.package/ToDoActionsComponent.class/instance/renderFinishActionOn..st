@@ -2,10 +2,10 @@ rendering
 renderFinishActionOn: html
 	self toDoItem canFinish
 		ifTrue: [ self class
-				renderActionWith: [ self toDoItem finish ]
+				renderActionOn: html
 				button: [ html tbsButton
 						beSuccess;
 						beLabeled;
 						beSmall;
 						with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconOk ] ] ]
-				on: html ]
+				with: [ self toDoItem finish ] ]

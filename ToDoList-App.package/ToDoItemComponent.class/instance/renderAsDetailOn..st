@@ -1,19 +1,14 @@
-rendering
+private - rendering
 renderAsDetailOn: html
 	html tbsPanel
 		beDefault;
 		with: [ html
 				tbsPanelHeading: [ html heading
 						level: 3;
-						with: self toDoItem name ].
+						with: (self renderNameOn: html) ].
 			html
-				tbsPanelBody: [ self renderStatusOn: html.
-					ToDoActionsComponent of: self toDoItem.
-					ToDoActionsComponent
-						renderDeleteActionOn: html
-						with: [ onDelete value.
-							self answer: false ].
+				tbsPanelBody: [ self renderStatusSectionOn: html.
 					html horizontalRule.
-					self renderCommentsSectionOn: html.
+					self renderCommentsSectionOn: html ].
 			html
-				tbsPanelFooter: [ ToDoActionsComponent renderHomeActionOn: html with: [ self answer: false ] ] ]]
+				tbsPanelFooter: [ ToDoActionsComponent renderHomeActionOn: html with: [ self answer: false ] ] ]

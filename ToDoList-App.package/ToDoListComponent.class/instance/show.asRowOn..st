@@ -1,6 +1,6 @@
 delegation
-show: each asRowOn: html
+show: anItem asRowOn: html
 	(ToDoItemComponent
-										with: each
-										onDelete: [ self removeItem: each ]
-										onShow: [ self show: each ]) renderAsRowOn: html
+		with: anItem
+		onDelete: [ self removeItem: anItem ]
+		onShow: [ self show: anItem ]) renderAsRowOn: html

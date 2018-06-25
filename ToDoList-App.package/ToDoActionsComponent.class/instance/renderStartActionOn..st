@@ -2,10 +2,10 @@ rendering
 renderStartActionOn: html
 	self toDoItem canStart
 		ifTrue: [ self class
-				renderActionWith: [ self toDoItem start ]
+				renderActionOn: html
 				button: [ html tbsButton
 						beDefault;
 						beLabeled;
 						beSmall;
 						with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconPlay ] ] ]
-				on: html ]
+				with: [ self toDoItem start ] ]

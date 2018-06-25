@@ -1,15 +1,15 @@
 rendering
 renderAsRowOn: html
 	html
-		tbsRow: [ html tbsColumn
-				mediumSize: 6;
-				with: [ html
-						strong: self toDoItem name;
-						break;
-						small: self toDoItem status ].
-			html tbsColumn
-				mediumSize: 2;
-				mediumOffset: 4;
-				with: [ ToDoActionsComponent renderShowActionOn: html with: self onShow.
-					html span with: [ ToDoActionsComponent new toDoItem: self toDoItem ].
-					ToDoActionsComponent renderDeleteActionOn: html with: onDelete ] ]
+		tableRow: [ html
+				tableData: [ html tbsColumn
+						mediumSize: 8;
+						with: [ html
+								strong: self toDoItem name;
+								break;
+								small: self toDoItem status ].
+					html tbsColumn
+						mediumSize: 4;
+						with: [ ToDoActionsComponent renderShowActionOn: html with: self onShow.
+							ToDoActionsComponent renderDeleteActionOn: html with: onDelete.
+							self renderActionsOn: html] ] ]
