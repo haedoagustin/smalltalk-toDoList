@@ -4,5 +4,5 @@ renderStatusOn: html
 		beSmall;
 		with: [ html heading
 				level4;
-				with: [ html strong: 'Estado actual: '.
-					html text: self toDoItem status ] ]
+				with: [ html strong: 'Estado actual '. html break;
+					 text: self toDoItem status ] ]

@@ -1,6 +1,7 @@
 rendering
 renderNavOn: html
-	html tbsNav
-		bePills;
-		with: [ self renderCreateItemActionOn: html.
-			self renderFilterNavOn: html ]
+html
+						tbsRow: [ html
+								tbsColumn: [ self renderFilterOn: html ] mediumSize: 10;
+								tbsColumn: [ ToDoActionsComponent renderCreateItemActionOn: html with: [ self createItem ] ]
+									mediumSize: 2 ].

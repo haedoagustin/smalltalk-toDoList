@@ -1,5 +1,7 @@
-rendering actions
+rendering
 renderAddCommentOn: html
+		self toDoItem canReciveComments
+		ifTrue: [ 
 	html
 		form: [ html textArea
 				class: 'form-control';
@@ -8,4 +10,4 @@ renderAddCommentOn: html
 			html submitButton
 				class: 'btn btn-default';
 				callback: [  ];
-				value: 'Agregar comentario' ]
+				value: 'Agregar comentario' ] ]

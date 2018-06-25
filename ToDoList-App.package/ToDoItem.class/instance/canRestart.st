@@ -1,3 +1,0 @@
-testing
-canRestart
-	^ state canRestart 
