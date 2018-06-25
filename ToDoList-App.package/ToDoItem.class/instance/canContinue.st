@@ -1,0 +1,3 @@
+testing
+canContinue
+	^ state canContinue 

@@ -6,7 +6,7 @@ renderContentOn: html
 	toDoItem canPause
 		ifTrue: [ self renderPauseActionOn: html.
 			html space ].
-	toDoItem canRestart
+	toDoItem canContinue
 		ifTrue: [ self renderContinueActionOn: html.
 			html space ].
 	toDoItem canFinish
