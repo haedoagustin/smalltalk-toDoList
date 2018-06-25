@@ -1,19 +1,14 @@
-rendering
+private - rendering
 renderAsDetailOn: html
 	html tbsPanel
 		beDefault;
-		with: [ html tbsPanelHeading: [ html heading: self toDoItem name ].
+		with: [ html
+				tbsPanelHeading: [ html heading
+						level: 3;
+						with: (self renderNameOn: html) ].
 			html
-				tbsPanelBody: [ self renderStatusOn: html.
-					self renderItemActionsOn: html.
-					self
-						renderDeleteActionOn: html
-						with: [ callbackToDelete value.
-							self answer: false ].
+				tbsPanelBody: [ self renderStatusSectionOn: html.
 					html horizontalRule.
-					self toDoItem hasComments
-						ifTrue: [ self renderListOfCommentOn: html ]
-						ifFalse: [ html html: '<h4><i>No hay comentarios. :(</i></h4>' ].
-					toDoItem canReciveComments
-						ifTrue: [ self renderAddCommentOn: html ] ].
-			html tbsPanelFooter: [ self renderHomeActionOn: html ] ]
+					self renderCommentsSectionOn: html ].
+			html
+				tbsPanelFooter: [ ToDoActionsComponent renderHomeActionOn: html with: [ self answer: false ] ] ]

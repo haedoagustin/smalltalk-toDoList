@@ -1,9 +1,11 @@
 rendering
 renderStartActionOn: html
-	html anchor
-		callback: [ self toDoItem start ];
-		with: [ html tbsButton
-				beSmall;
-				beLabeled;
-				beDefault;
-				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconPlay ].]]
+	self toDoItem canStart
+		ifTrue: [ self class
+				renderActionOn: html
+				button: [ html tbsButton
+						beDefault;
+						beLabeled;
+						beSmall;
+						with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconPlay ] ] ]
+				with: [ self toDoItem start ] ]
