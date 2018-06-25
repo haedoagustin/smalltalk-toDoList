@@ -1,7 +1,7 @@
 rendering actions
 renderSeeDetailsActionOn: html
 	html anchor
-		callback: callbackSeeDetails;
+		callback: onShowDetails;
 		with: [ html tbsButton
 				beSmall;
 				beInfo;

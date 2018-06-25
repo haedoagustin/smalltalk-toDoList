@@ -1,3 +1,3 @@
 callbacks
-callbackToDelete: anItem
+onDelete: anItem
 	self removeItem: anItem

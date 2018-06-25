@@ -7,8 +7,8 @@
 	"classvars" : [ ],
 	"instvars" : [
 		"toDoItem",
-		"callbackSeeDetails",
-		"callbackToDelete"
+		"onShowDetails",
+		"onDelete"
 	],
 	"name" : "ToDoItemComponent",
 	"type" : "normal"

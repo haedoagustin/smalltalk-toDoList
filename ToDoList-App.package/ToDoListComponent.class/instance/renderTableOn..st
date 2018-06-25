@@ -1,6 +1,8 @@
 rendering
 renderTableOn: html
 	html
+		tableHead: [ html tableHeading: 'Tarea'].
+	html
 		tableBody: [ html tbsTable
 				beHover;
 				with: [ self toDoListFiltered

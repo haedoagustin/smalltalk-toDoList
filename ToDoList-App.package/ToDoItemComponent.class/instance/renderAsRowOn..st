@@ -6,4 +6,4 @@ renderAsRowOn: html
 				tableData: [ html small: self toDoItem status ];
 				tableData: [ self renderSeeDetailsActionOn: html ];
 				tableData: [ self renderItemActionsOn: html ];
-				tableData: [ self renderDeleteActionOn: html with: callbackToDelete ] ]
+				tableData: [ self renderDeleteActionOn: html with: onDelete ] ]

@@ -8,7 +8,7 @@ renderAsDetailOn: html
 					self renderItemActionsOn: html.
 					self
 						renderDeleteActionOn: html
-						with: [ callbackToDelete value.
+						with: [ onDelete value.
 							self answer: false ].
 					html horizontalRule.
 					self toDoItem hasComments
