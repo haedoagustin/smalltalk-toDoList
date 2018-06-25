@@ -4,4 +4,4 @@ renderContentOn: html
 		tbsRow: [ html tbsColumn
 				mediumSize: 6;
 				mediumOffset: 3;
-				with: [ self renderFormOn: html. ]]
+				with: [ self renderFormOn: html ] ]

@@ -1,4 +1,4 @@
-rendering
+private - rendering
 renderNavOn: html
 html
 						tbsRow: [ html

@@ -1,4 +1,4 @@
-rendering
+private - rendering
 renderTableOn: html
 	html tbsTable
 						beHover;
