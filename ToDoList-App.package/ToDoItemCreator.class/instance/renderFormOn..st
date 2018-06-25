@@ -25,5 +25,4 @@ renderFormOn: html
 							html space.
 							html cancelButton
 								callback: [ self answer: nil ];
-								value: 'Cancelar' ].
-					 ] ]
+								value: 'Cancelar' ] ] ]
