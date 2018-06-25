@@ -7,7 +7,7 @@ renderStatusSectionOn: html
 				with: 'Estado actual '.
 			html heading
 				level3;
-				with: [ self renderStatusOn: html ].
+				with: [ html text: self itemStatus  ].
 			html horizontalRule.
 			self renderActionsOn: html.
 			ToDoActionsComponent

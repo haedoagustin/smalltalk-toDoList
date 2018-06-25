@@ -5,7 +5,7 @@ renderAsDetailOn: html
 		with: [ html
 				tbsPanelHeading: [ html heading
 						level: 3;
-						with: (self renderNameOn: html) ].
+						with: [ html text: self itemName ] ].
 			html
 				tbsPanelBody: [ self renderStatusSectionOn: html.
 					html horizontalRule.
