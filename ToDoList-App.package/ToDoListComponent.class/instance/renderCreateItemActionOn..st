@@ -1,6 +1,9 @@
 rendering
 renderCreateItemActionOn: html
-	html  anchor
-				class: 'btn btn-large btn-success';
-				callback: [ self createItem ];
-				with: 'Nueva tarea' 
+	html anchor
+		callback: [ self createItem ];
+		with: [ html tbsButton
+				
+				beLabeled;
+				beSuccess;
+				with: [ html tbsButtonLabel: [ html text: 'Nueva tarea' ] ] ]
