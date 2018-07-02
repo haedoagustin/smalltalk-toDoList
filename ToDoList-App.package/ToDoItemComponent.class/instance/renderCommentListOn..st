@@ -6,4 +6,6 @@ renderCommentListOn: html
 				level3;
 				with: 'Comentarios: '.
 			html
-				tbsListGroup: [ self toDoItem comments do: [ :comment | html tbsListGroupItem: comment ] ] ].
+				tbsListGroup: [ self toDoItem comments
+						do: [ :comment |  html
+		tbsListGroupItem: [self renderComment: comment on: html ]] ] ]
