@@ -1,5 +1,6 @@
 rendering
 renderAsRowOn: html
+<<<<<<< HEAD
 	html
 		tableRow: [ html
 				tableData: [ html tbsColumn
@@ -13,3 +14,12 @@ renderAsRowOn: html
 						with: [ ToDoActionsComponent renderShowActionOn: html with: self onShow.
 							ToDoActionsComponent renderDeleteActionOn: html with: onDelete.
 							self renderActionsOn: html ] ] ]
+=======
+	html tableRow
+		with: [ html
+				tableData: [ html strong: self itemName ];
+				tableData: [ html small: self itemStatus];
+				tableData: [ self renderSeeDetailsActionOn: html ];
+				tableData: [ self renderItemActionsOn: html ];
+				tableData: [ self renderDeleteActionOn: html with: onDelete ] ]
+>>>>>>> master
