@@ -1,3 +1,3 @@
 tests-comment
-testCanNotAddCommentWhenIsFinishedAddComment
+testCanNotAddCommentWhenIsFinished
 	self should: [ finished addComment: aComment ] raise: InvalidStateException

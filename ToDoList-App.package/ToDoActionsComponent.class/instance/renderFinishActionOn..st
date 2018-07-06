@@ -1,9 +1,11 @@
 rendering
 renderFinishActionOn: html
-	html anchor
-		callback: [ self toDoItem finish ];
-		with: [ html tbsButton
-				beSmall;
-				beLabeled;
-				beSuccess;
-				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconOk ] ] ]
+	self toDoItem canFinish
+		ifTrue: [ self class
+				renderActionOn: html
+				button: [ html tbsButton
+						beSuccess;
+						beLabeled;
+						beSmall;
+						with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconOk ] ] ]
+				with: [ self toDoItem finish ] ]

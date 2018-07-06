@@ -1,9 +1,11 @@
 rendering
 renderContinueActionOn: html
-	html anchor
-		callback: [ self toDoItem togglePause ];
-		with: [ html tbsButton
-				beSmall;
-				beLabeled;
-				beDefault;
-				with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconForward ] ] ]
+	self toDoItem canContinue
+		ifTrue: [ self class
+				renderActionOn: html
+				button: [ html tbsButton
+						beDefault;
+						beLabeled;
+						beSmall;
+						with: [ html tbsButtonLabel: [ html tbsGlyphIcon iconForward ] ] ]
+				with: [ self toDoItem togglePause ] ]
